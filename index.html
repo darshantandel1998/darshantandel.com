@@ -1,1 +1,132 @@
-Test Page
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Basic meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title & description (change both to match page content) -->
+  <title>Example: Simple SEO-friendly Page — Your Site Name</title>
+  <meta name="description" content="A short, compelling summary of this page's content (120–160 characters). Replace with your own description.">
+  <meta name="keywords" content="replace, with, comma-separated, keywords">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL (change to the page's preferred URL) -->
+  <link rel="canonical" href="https://stellar-mochi-63c462.netlify.app/simple-seo-page">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Example: Simple SEO-friendly Page — Your Site Name">
+  <meta property="og:description" content="A short, compelling summary of this page's content. Replace with your own description.">
+  <meta property="og:url" content="https://stellar-mochi-63c462.netlify.app/simple-seo-page">
+  <meta property="og:site_name" content="Your Site Name">
+  <meta property="og:image" content="https://stellar-mochi-63c462.netlify.app/images/preview.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Example: Simple SEO-friendly Page — Your Site Name">
+  <meta name="twitter:description" content="A short, compelling summary of this page's content.">
+  <meta name="twitter:image" content="https://stellar-mochi-63c462.netlify.app/images/preview.jpg">
+
+  <!-- Preconnect & prefetch useful external origins (optional) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Add one small stylesheet or inline-critical CSS to improve LCP -->
+  <style>
+    /* Minimal, responsive styles for demo */
+    :root{--max:1100px;--accent:#0b74de}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.6;color:#111;margin:0;padding:0}
+    .container{max-width:var(--max);margin:0 auto;padding:24px}
+    header, main, footer{padding:12px 0}
+    h1{font-size:clamp(1.5rem,2.5vw,2.25rem);margin:0 0 8px}
+    .meta{color:#666;font-size:.95rem}
+    .hero{display:flex;gap:16px;align-items:center}
+    nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:0}
+    a{color:var(--accent);text-decoration:none}
+    .card{border:1px solid #e8e8e8;padding:16px;border-radius:8px}
+    footer{font-size:.9rem;color:#555;border-top:1px dashed #eee;margin-top:24px;padding-top:16px}
+  </style>
+
+  <!-- JSON-LD structured data (WebPage + Organization). Update values. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://stellar-mochi-63c462.netlify.app/#org",
+        "name": "Your Site Name",
+        "url": "https://stellar-mochi-63c462.netlify.app/",
+        "logo": "https://stellar-mochi-63c462.netlify.app/images/logo.png"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://stellar-mochi-63c462.netlify.app/simple-seo-page#webpage",
+        "url": "https://stellar-mochi-63c462.netlify.app/simple-seo-page",
+        "name": "Example: Simple SEO-friendly Page — Your Site Name",
+        "description": "A short, compelling summary of this page's content.",
+        "inLanguage": "en",
+        "isPartOf": {"@id":"https://stellar-mochi-63c462.netlify.app/#org"}
+      }
+    ]
+  }
+  </script>
+
+</head>
+<body>
+  <header class="container" role="banner">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;">
+      <a href="/" aria-label="Go to homepage"><img src="/images/logo.png" alt="Your Site Name logo" width="120" height="36"></a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <article itemscope itemtype="https://schema.org/Article">
+      <header class="hero">
+        <div>
+          <h1 itemprop="headline">Example: Simple SEO-friendly Page</h1>
+          <p class="meta">Published <time datetime="2025-11-03">November 3, 2025</time> — <span itemprop="author">Your Name</span></p>
+        </div>
+        <!-- illustrative image; use an appropriately sized image and set loading="lazy" -->
+        <img src="/images/hero.jpg" alt="Descriptive alt text about the page content" width="420" height="280" loading="lazy">
+      </header>
+
+      <section itemprop="articleBody" class="card" style="margin-top:16px;">
+        <p>Welcome! This is a simple, well-structured HTML template focused on good SEO basics: semantic markup, meta tags, Open Graph/Twitter cards, canonical URL, and structured data. Replace text, titles, and URLs with your site-specific content.</p>
+
+        <h2>Why these SEO elements matter</h2>
+        <ul>
+          <li><strong>Title & meta description</strong> appear in search results and influence click-through rate.</li>
+          <li><strong>Canonical</strong> prevents duplicate-content indexing issues.</li>
+          <li><strong>Structured data (JSON-LD)</strong> helps search engines understand the page and may enable rich results.</li>
+          <li><strong>Open Graph & Twitter tags</strong> control how the page looks when shared on social media.</li>
+        </ul>
+
+        <h3>Quick checklist</h3>
+        <ol>
+          <li>Customize the <code>&lt;title&gt;</code>, meta description, and canonical URL.</li>
+          <li>Use a unique H1 per page and include target keywords naturally.</li>
+          <li>Ensure images have descriptive <code>alt</code> text and are optimized for size.</li>
+          <li>Serve pages over HTTPS and make sure they are crawlable (no auth, noindex removed).</li>
+        </ol>
+
+        <p>If you want a version tailored for a blog post, product page, or multi-language site, tell me which type and I will adjust the template.</p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="container" role="contentinfo">
+    <p>&copy; <span id="year">2025</span> Your Site Name — <a href="/privacy">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Small script to keep copyright year current -->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

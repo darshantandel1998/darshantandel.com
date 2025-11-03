@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+
+# Specifically allow Bingbot (optional, reinforces access)
+User-agent: bingbot
+Allow: /
+
+
+# Sitemap location (update with your actual sitemap URL)
+Sitemap: https://stellar-mochi-63c462.netlify.app/sitemap.xml
+
+
+# Optional: Crawl-delay (set only if your server has limited resources)
+# Crawl-delay: 10
